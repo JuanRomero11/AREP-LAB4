@@ -27,7 +27,7 @@ public class Controller {
                 + "<title>WebApp</title>\n" + "</head>\n" + "<body>\n"
                 + "<h1>muy bien ya has probado que funciona los paths :) ahora prueba el mas importante</h1>\n"
                 + "<h2>se llama prueba de Persistencia y  tendras que ingresar de la siguiente forma</h2>\n"
-                + "<h1>Apps/FechaActual.js</h1>\n" + "</body>\n" + "</html>\n";
+                + "<h1>Apps/index</h1>\n" + "</body>\n" + "</html>\n";
         return outputLine;
 
     }
