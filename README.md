@@ -25,13 +25,11 @@ Este proyecto basicamente esta construido en maven y el editor que se utilizo fu
 ## Diseño
 Diagramas del diseño
 
-![alt text]()
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/dise%C3%B1o1.PNG)
 
-![alt text]()
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/dise%C3%B1o2.PNG)
 
-![alt text]()
 
-![alt text]()
 
 ## Descripcion del diseño
 Esta se encuentra en el documento latex aqui se encuentra con extension pdf, es el unico archivo con esta extension en este repositorio.
