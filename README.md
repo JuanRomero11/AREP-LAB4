@@ -65,23 +65,39 @@ Para ejecutar las pruebas se pueden utilizar dos comandos:
           mvn package
           
           mvn test
-          
+
 Despues de ello se ejecutan todas las pruebas realizadas en la aplicacion
 
-resultados de las pruebas realizando directamente en la pagina desplegada:
+resultados de las pruebas realizando directamente en la pagina local:
 
 Pruebas de peticion de imagenes
-![alt text]()
-![alt text]()
-Pruebas de peticion de paths desde el controllers
-![alt text]()
-![alt text]()
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/Imagenes.PNG)
+
 pruebas de peticion de paths desde el controller con archivos html
-![alt text]()
-![alt text]()
+
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/pathPruebas4.PNG)
+
+
+Pruebas de peticion de paths desde el controllers
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/pathPruebas.PNG)
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/pathPruebas2.PNG)
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/pathPruebas3.PNG)
+
+pruebas de peticion de paths de arhicvos normales
+
+![alt text](https://github.com/JuanRomero11/AREP-LAB4/blob/main/images/pathPruebas5.PNG)
+
+
+
+
 pruebas de peticion de archivos normales
-![alt text]()
-![alt text]()
+
+
 
 
 consulta en la base de datos fue efectiva :
