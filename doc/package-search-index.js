@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"co.edu.eci.escuelaing.app.Httpserver"},{"l":"co.edu.eci.escuelaing.app.persistence.services"},{"l":"co.edu.eci.escuelaing.app.Spring"},{"l":"co.edu.eci.escuelaing.app.Spring.tests"}];updateSearchResults();

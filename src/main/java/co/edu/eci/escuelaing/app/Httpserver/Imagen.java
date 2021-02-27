@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package co.edu.eci.escuelaing.app.Httpserver;
 
 import java.io.DataOutputStream;
@@ -29,7 +32,7 @@ public class Imagen implements Response {
 	/**
 	 * Solicitud archivo.
 	 *
-	 * @param file the file
+	 * @param path the path
 	 * @param clientSocket the client socket
 	 * @param extension the extension
 	 * @throws IOException Signals that an I/O exception has occurred.

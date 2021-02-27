@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package co.edu.eci.escuelaing.app.Spring.tests;
 
 import java.net.MalformedURLException;
@@ -5,10 +8,19 @@ import java.net.MalformedURLException;
 import co.edu.eci.escuelaing.app.Spring.*;
 import co.edu.eci.escuelaing.app.persistence.services.*;
 
+/**
+ * The Class Controller.
+ */
 public class Controller {
 
+    /** The persistence. */
     private static PersistenceImpl persistence = new PersistenceImpl();
 
+    /**
+     * Gets the hello.
+     *
+     * @return the hello
+     */
     @RequestMapping("/hello")
     public static String getHello() {
         String outputLine = "<!DOCTYPE html>\n" + "<html>\n" + "<head>\n" + "<meta charset=\"UTF-8\">\n"
@@ -20,12 +32,23 @@ public class Controller {
 
     }
 
+    /**
+     * Gets the index.
+     *
+     * @return the index
+     * @throws MalformedURLException the malformed URL exception
+     */
     @RequestMapping("/index")
     public static String getIndex() throws MalformedURLException {
         return persistence.getArchivo("FechaActual.js");
 
     }
     
+    /**
+     * Prueba.
+     *
+     * @return the string
+     */
     @RequestMapping("/prueba")
     public static String prueba(){
         String outputLine = 
@@ -42,6 +65,11 @@ public class Controller {
                 return outputLine;
     }
     
+    /**
+     * Principal.
+     *
+     * @return the string
+     */
     @RequestMapping("/App")
     public static String principal() {
         String outputLine = 

@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package co.edu.eci.escuelaing.app.Httpserver;
 import java.net.*;
 import java.io.*;
@@ -7,15 +10,32 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import co.edu.eci.escuelaing.app.Spring.MicroSpring;
 
+/**
+ * The Class HttpServer.
+ */
 public class HttpServer {
 
+    /** The port. */
     private int port = 4567;
+    
+    /** The spring. */
     MicroSpring spring;
+    
+    /** The client socket. */
     Socket clientSocket = null;
 
+    /**
+     * Instantiates a new http server.
+     *
+     * @param spring the spring
+     */
     public HttpServer(MicroSpring spring) {
         this.spring = spring;
     }
+    
+    /**
+     * Start.
+     */
     public void start() {
         boolean running = false;
         try {
@@ -52,6 +72,12 @@ public class HttpServer {
         }
     }
 
+    /**
+     * Proceso solicitud.
+     *
+     * @param clientSocket the client socket
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
     private void procesoSolicitud(Socket clientSocket) throws IOException {
         BufferedReader in = new BufferedReader(
                 new InputStreamReader(clientSocket.getInputStream()));
@@ -81,6 +107,13 @@ public class HttpServer {
     }
 
 
+    /**
+     * Solicitud.
+     *
+     * @param req the req
+     * @param out the out
+     * @throws IOException Signals that an I/O exception has occurred.
+     */
     private void solicitud(Request req, PrintWriter out) throws IOException {
         URI uri = req.getTheuri();
         //StringBuilder stringBuilder = new StringBuilder();
@@ -109,6 +142,13 @@ public class HttpServer {
         out.close();
     }
 
+    /**
+     * Gets the app response.
+     *
+     * @param theuri the theuri
+     * @param out the out
+     * @return the app response
+     */
     private void getAppResponse(String theuri, PrintWriter out) {
         String response = spring.executeService(theuri);
         String header = "HTTP/1.1 200 OK\r\n"

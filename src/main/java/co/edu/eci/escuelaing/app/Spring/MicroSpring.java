@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 
 package co.edu.eci.escuelaing.app.Spring;
 
@@ -8,10 +11,21 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+/**
+ * The Class MicroSpring.
+ */
 public class MicroSpring {
     
+    /** The services. */
     Map<String, Method> services = new HashMap<>();
     
+    /**
+     * Map service.
+     *
+     * @param componentName the component name
+     * @throws Exception the exception
+     */
     public void mapService(String componentName) throws Exception{
 
       int nMethods = 0;
@@ -31,6 +45,12 @@ public class MicroSpring {
    }
     
 
+   /**
+    * Execute service.
+    *
+    * @param uri the uri
+    * @return the string
+    */
    public String executeService(String uri){
         try {
             return services.get(uri).invoke(null).toString();

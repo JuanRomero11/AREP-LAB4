@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package co.edu.eci.escuelaing.app.persistence.services;
 
 import java.io.BufferedReader;
@@ -6,10 +9,21 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * The Class PersistenceImpl.
+ */
 public class PersistenceImpl {
 
+    /** The url. */
     private final String URL = "https://immense-brook-58674.herokuapp.com/";
 
+    /**
+     * Gets the archivo.
+     *
+     * @param complemento the complemento
+     * @return the archivo
+     * @throws MalformedURLException the malformed URL exception
+     */
     public String getArchivo(String complemento) throws MalformedURLException {
         String greeting=null;
 

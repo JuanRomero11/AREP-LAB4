@@ -1,3 +1,6 @@
+/*
+ * 
+ */
 package co.edu.eci.escuelaing.app.Httpserver;
 
 import java.io.BufferedReader;
@@ -11,6 +14,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 /**
  * The Class Archivo.
  *
@@ -30,6 +34,14 @@ public class Archivo implements Response {
 		this.out = out;
 	}
 
+	/**
+	 * Solicitud archivo.
+	 *
+	 * @param path the path
+	 * @param clientSocket the client socket
+	 * @param req the req
+	 * @throws IOException Signals that an I/O exception has occurred.
+	 */
 	@Override
 	public void SolicitudArchivo(String path, Socket clientSocket, String req) throws IOException {
 			System.out.println("++++++++++++++++++++++++++++++++++++");
